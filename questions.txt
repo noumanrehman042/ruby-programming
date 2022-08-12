@@ -1,0 +1,19 @@
+Strongly typed vs weakly typed
+Compile time vs interpreted language
+on which language Ruby is based
+self in ruby
+gsub, sub
+size vs count vs length
+map vs map! vs each vs inject, parameter in inject, reduce, detect, collect
+each vs each_with_index vs for loop
+Multiple inheritance and multiple inheritance in ruby
+Mixin in Ruby?
+Module vs class
+include vs extend vs prepend
+ancestor chain?
+Class method vs instance method in ruby
+attribute accessor, attr reader, att writer
+Exception handling, begin, rescue, else, ensure
+namespace?
+serialization?
+Block vs proc vs lambda
