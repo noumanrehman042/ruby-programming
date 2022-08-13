@@ -1,10 +1,24 @@
 
-# n Computer Programming, Lambda functions are anonymous functions. Lambda functions in Ruby are no different.
+# In Computer Programming, Lambda functions are anonymous functions. Lambda functions in Ruby are no different.
 # Since everything in Ruby is treated as an object, lambdas are also objects in Ruby.
-#  Lambdas in Ruby allow us to wrap data and logic in a portable package
+
+# Lambdas in Ruby allow us to wrap data and logic in a portable package
+# A lambda is a way to define a block & its parameters with some special syntax.
+# You can save this lambda into a variable for later use.
+
+# 
+
 
 l = lambda {  "Do or do not " }
+puts l.call()
+
+# You can also use the alternative syntax: ->  instead of lambda.
+l = -> {  "Do or do not " }
 puts l.call( )
+# puts l.call     #  other way to call
+# puts l.()
+# puts l[]
+# puts l.===
 
 l = lambda { |s| "My name is #{s}" }
 puts l.call("humza")
@@ -17,6 +31,7 @@ l = lambda do |string|
     return "Do or do not."
   end
 end
+
 puts l.call("try") # Feel free to experiment with this
 
 # **********************
@@ -26,6 +41,7 @@ square = lambda {|x| x*x}
 def perform(operation , a)
   return operation.call(a)
 end
+
 puts perform( square , 2)    #  passing lambda as paramether
 
 

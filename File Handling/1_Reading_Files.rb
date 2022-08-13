@@ -1,3 +1,5 @@
+# https://www.tutorialspoint.com/ruby/ruby_input_output.htm
+
 File.open("employees.txt", "r") do |file|     # this will store file content in the file variable
     # puts file.read()         #  read whole file
     # puts file.readline()     #  read one line and now file pointer is at the next line
@@ -9,7 +11,7 @@ File.open("employees.txt", "r") do |file|     # this will store file content in 
         puts line
     end
 end
- 
+
 # ---------------
 # or
 # ---------------
@@ -22,7 +24,12 @@ end
 # end
 # file.close  # here we need to close the file
 
+# ******************************
 
+# In simple words, truncating a file means removing the file contents without deleting the file.
+#  Truncating a file is much faster and easier than deleting the file , recreating it, and setting the correct permissions and ownership
+
+# ******************************
 
 # Mode |  Meaning
 # -----+--------------------------------------------------------

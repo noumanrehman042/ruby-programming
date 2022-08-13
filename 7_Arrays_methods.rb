@@ -39,5 +39,12 @@ names.select { |num|  num.length > 5}
 
 # ********************
 
+a = [18, 22, 33, 3, 5, 6]
+p a.delete_if{|i| i < 10 }
+p a
 
-p [1,2,3,4,5,6,7].delete_if{|i| i < 4 }
+# ********************
+
+b = [1, 4, 1, 1, 88, 9]
+puts "reject method : #{b.reject {|num| num > 10 }}"
+p b

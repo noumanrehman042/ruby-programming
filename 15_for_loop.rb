@@ -5,7 +5,8 @@ for i in 0..5
   puts i                  #   print 0 to 5 ( 6 iterations )
 end
 
-5.times do |index|               # index is just variable name, we can use simple i 
+
+5.times do |index|               # index is just variable name, we can use simple i
   puts "value = #{index}"        #   print index 0 to 4   ( 5 iterations )
 end
 
@@ -14,10 +15,17 @@ for num in nums
     puts num
 end
 
+nums.each { |num| puts "Array value = #{num}"}
+nums.each_with_index { |num,index| puts "Array value = #{num}, index=#{ i}"}
+
 nums.each do |num|
-  puts "Arrasy value = #{num}"
+  puts "Array value = #{num}"
+end
+
+nums.each_with_index do |num, i|
+  puts "Array value = #{num}, index=#{ i}"
 end
 
 (0..5).each do |i|
-  puts "Value = #{i}"      #    print 0 to 5 
+  puts "Value = #{i}"      #    print 0 to 5
 end

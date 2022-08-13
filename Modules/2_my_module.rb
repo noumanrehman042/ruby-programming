@@ -1,4 +1,4 @@
-# A Module is a collection of methods, constants, and class variables. 
+# A Module is a collection of methods, constants, and class variables.
 # Modules are defined as a class, but with the module keyword not with class keyword.
 
 # https://www.geeksforgeeks.org/ruby-module/
