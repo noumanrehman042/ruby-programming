@@ -86,6 +86,18 @@ each(students, &print_lambda)
 
 # lambda and procs are similar to block but they are objects
 
-# procs treat as an inline code
+# procs treat as an inline code ( behaves like it’s a part of the calling method )
 
 # **********************
+
+
+# Kernel#proc factory method is identical to Proc.new. Note that proc is a method and not a literal form like -> nor a keyword like yield.
+
+# The following two lines produce identical results.
+
+short = proc { |a, b| a + b }
+puts short.call(2, 3)
+
+long = Proc.new { |a, b| a + b }
+puts long.call(2, 3)
+ 

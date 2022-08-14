@@ -1,1 +1,0 @@
-https://www.geeksforgeeks.org/ruby-getters-and-setters-method/

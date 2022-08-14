@@ -6,7 +6,7 @@
 # A lambda is a way to define a block & its parameters with some special syntax.
 # You can save this lambda into a variable for later use.
 
-# 
+#
 
 
 l = lambda {  "Do or do not " }
@@ -23,6 +23,8 @@ puts l.call( )
 l = lambda { |s| "My name is #{s}" }
 puts l.call("humza")
 
+addition = lambda {|a, b| return a + b }
+puts addition.call(5, 6)
 
 l = lambda do |string|
   if string == "try"
@@ -46,3 +48,24 @@ puts perform( square , 2)    #  passing lambda as paramether
 
 
 # **********************
+
+# A block can be created by wrapping a chunk of code with curly braces ({}) or the words do and end.
+#  Unlike the curly braces that you've seen thus far, the do - end syntax requires that the do, the code for the block, and the end all be on separate lines.
+
+# do the same thing but using different syntaxes.
+
+addition = lambda {|a, b| a + b }
+puts addition.call(5, 5)
+
+addition = lambda {|a, b|
+ a + b
+}
+puts addition.call(5, 5)
+
+addition = lambda do |a, b|
+ a + b
+end
+puts addition.call(5, 5)
+
+addition = lambda do |a, b|; a + b; end
+puts addition.call(5, 5)

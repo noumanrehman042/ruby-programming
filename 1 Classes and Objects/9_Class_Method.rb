@@ -69,3 +69,12 @@ Grocery.printitems_only
 
 # throws an error
 # list.printitems_only
+
+# *************************************
+
+# In def self.printitems_only, the keyword self denotes that the method printitems_only is being defined in the context of the Class itself, not its instances.
+#  Any method definition without the self qualifier is by default an instance method.
+
+
+# Class methods do not have access to instance methods or instance variables.
+# However instance methods can access both class methods and class variables.

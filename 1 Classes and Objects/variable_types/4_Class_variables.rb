@@ -17,7 +17,7 @@ class Customer
   @@no_of_customers = 0
 
   def initialize(id, name, addr)
-    # An instance Variable    
+    # An instance Variable
     @cust_id = id
     @cust_name = name
     @cust_addr = addr
@@ -27,7 +27,7 @@ class Customer
 
   # displaying result
   def display_details
-    
+
     puts "Customer id #{@cust_id}"
     puts "Customer name #{@cust_name}"
     puts "Customer address #{@cust_addr}"
@@ -52,4 +52,32 @@ cust2.display_details
 
 # Call Methods
 
-# cust1.total_no_of_customers 
+# cust1.total_no_of_customers
+
+
+# ******************************
+
+# One of the places where class variables do find proper use is to store application configuration -
+# things like application name, version, database and other settings.
+class ApplicationConfiguration
+  @@configuration = {}
+
+  def self.set(property_name, value)
+    @@configuration[property_name] = value
+  end
+
+  def self.get(property_name)
+    @@configuration[property_name]
+  end
+end
+
+ApplicationConfiguration.set("name", "Demo Application")
+ApplicationConfiguration.set("version", "0.1")
+
+p ApplicationConfiguration.get("version")
+
+# if we inherit this class , the class variable will remain same for all classes.
+# All classes share the same copy of the class variable @@configuration.
+
+# ******************************
+

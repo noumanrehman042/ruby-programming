@@ -3,10 +3,8 @@
 # They are similar to Class variables but their values are local to specific instances of an object.
 # Instance variables are available across methods for any specified instance or object i.e. instance variables can change from object to object.
 # There is no need to initialize the instance variables and uninitialized instance variable always contains a nil value.
+#  if your variable does not start with a @, it is considered to be a local variable.
 
-# !/usr/bin/ruby
-# Ruby program to illustrate
-# the Instance Variables
 
 class Customer
   def initialize(id, name, addr)
@@ -27,7 +25,7 @@ end
 # Create Objects
 cust1 = Customer.new('1', 'John', 'Wisdom Apartments, Ludhiya')
 cust2 = Customer.new('2', 'Poul', 'New Empire road, Khandala')
- 
+
 
 # Call Methods
 cust1.display_details

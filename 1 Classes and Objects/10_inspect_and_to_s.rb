@@ -20,3 +20,8 @@ p cat2
 
 puts cat1     # puts called to_s method
 puts cat2
+
+
+# If you override to_s for an object, Ruby will treat it as the result of inspect as well, unless you override inspect separately.
+
+# Also, it is generally a best practice to override the to_s method in your classes so that it can return meaningful result that is tailored for each class.
