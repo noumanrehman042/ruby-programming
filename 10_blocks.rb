@@ -1,7 +1,9 @@
 # Ruby has a concept of Block:
 
 # Ruby blocks are little anonymous functions that can be passed into methods.
-# You assign a name to a block.
+# A block is the same thing as a method, but it does not belong to an object.
+# Block can accept arguments and returns a value.
+# Block does not have their own name.
 # Blocks are enclosed in a
 #    1)  do / end statement (for single line )  or
 #    2)  between brackets {} (for multiple lines),

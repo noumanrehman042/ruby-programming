@@ -11,11 +11,12 @@
 # In Ruby, a proc is an instance of the Proc class and is similar to a block.
 # As opposed to a block, a proc is a Ruby object which can be stored in a variable and therefore reused many times throughout a program
 
-# Lambda vs Proc
-# Lambdas are defined with -> {} and procs with Proc.new {}.
-# Procs return from the current method, while lambdas return from the lambda itself.
-# Procs don’t care about the correct number of arguments, while lambdas will raise an exception.
+# Lambda vs Proc (3 main differences)
+# 1) Lambdas are defined with -> {} and procs with Proc.new {}.
+# 2) Procs return from the current method, while lambdas return from the lambda itself.
+# 3) Procs don’t care about the correct number of arguments, while lambdas will raise an exception.
 
+# summary
 # In Ruby, a lambda is an object similar to a proc.
 # Unlike a proc, a lambda requires a specific number of arguments passed to it,
 # and it returns to its calling method rather than returning immediately.
@@ -85,7 +86,7 @@ each(students, &print_lambda)
 # **********************
 
 # lambda and procs are similar to block but they are objects
-
+#
 # procs treat as an inline code ( behaves like it’s a part of the calling method )
 
 # **********************
@@ -100,4 +101,4 @@ puts short.call(2, 3)
 
 long = Proc.new { |a, b| a + b }
 puts long.call(2, 3)
- 
+

@@ -15,6 +15,7 @@ for num in nums
     puts num
 end
 
+# The each{} method allows one loop through the elements of an array to perform operations on them
 nums.each { |num| puts "Array value = #{num}"}
 nums.each_with_index { |num,index| puts "Array value = #{num}, index=#{ i}"}
 

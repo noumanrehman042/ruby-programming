@@ -4,6 +4,7 @@
 puts "Enter integer value: "
 myint = gets.chomp().to_i
 
+
 puts "Enter decimal  value: "
 myfloat = gets.chomp().to_f
 

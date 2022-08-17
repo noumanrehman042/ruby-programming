@@ -53,5 +53,16 @@ end                             # Prints "1:one; 2:two; 3:three; "
 
 # ******************************
 
+# Hash is often created using the array form that takes in even number of arguments as key-value pairs,
+#  or directly, a two-dimensional array with paired arrays.
+
+puts Hash[4, 8]
+puts Hash[ [[4, 8], [15, 16]] ]
+
+# ******************************
+ary = [[4, 8], [15, 16], [23, 42]]
+puts Hash[*ary.flatten]
+# ******************************
+
 # more on hash
 # https://www.geeksforgeeks.org/ruby-hash-class/#:~:text=In%20Ruby%2C%20Hash%20is%20a,be%20in%20the%20insertion%20order.

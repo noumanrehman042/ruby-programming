@@ -38,6 +38,8 @@ puts a + b + c
 # "Nice to meet you, do you like blueberries?"
 
 # ************************
+"Mississippi".count("i") # => 4
+# ************************
 
 a = ""
 a += "test"
@@ -80,6 +82,12 @@ myArray = "Geeks For Geeks".split
 puts myArray
 # ************************
 
-"I should look into your problem when I get time".sub('I','We')  # replace 'I' with 'We' in a given string:
-
-"I should look into your problem when I get time".gsub('I','We')   #  replace all occurrences
+# sub and gsub do not change actual string
+# The sub() method replaces just the first instance of a string with another.
+#  Gsub meanwhile replaces all instances.
+# Thus: Gsub is closest to a “replace string” method. Sub() is conceptually a “replace first string” method.
+str = "I should look into your problem when I get time"
+puts str.sub('I','We')  # replace 'I' with 'We' in a given string:
+puts str
+puts str.gsub('I','We')   #  replace all occurrences
+puts str
