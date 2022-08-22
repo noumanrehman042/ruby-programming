@@ -15,8 +15,8 @@ end
 
 # using module in the same file
 
-# include Tools
-# Tools.sayHi("Nouman")
+include Tools
+Tools.sayHi("Nouman")
 
 
 

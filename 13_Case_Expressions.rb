@@ -49,3 +49,42 @@ result = case score
 end
 
 puts result
+
+
+
+def getMon(num)
+   result =""
+
+   case num
+      when 1
+         result = "Jan"
+      when 2
+         result = "Feb"
+      when 3
+         result =  "Mar"
+      when 4
+         result =  "Apr"
+      when 5
+         result =  "May"
+      when 6
+         result =  "Jun"
+      when 7
+         result =  "Jul"
+      when 8
+         result =  "Aug"
+      when 9
+         result =  "Sep"
+      when 10
+         result =  "Oct"
+      when 11
+         result =  "Nov"
+      when 12
+         result =  "Dec"
+      else
+         result = "Invalid Month"
+   end
+
+   return result
+end
+
+puts getMon(12)
