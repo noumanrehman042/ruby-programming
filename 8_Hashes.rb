@@ -66,3 +66,13 @@ puts Hash[*ary.flatten]
 
 # more on hash
 # https://www.geeksforgeeks.org/ruby-hash-class/#:~:text=In%20Ruby%2C%20Hash%20is%20a,be%20in%20the%20insertion%20order.
+
+
+****************************
+
+h = {                        # A hash that maps number names to digits
+  :one => 1,               # The "arrows" show mappings: key=>value
+  :two => 2                # The colons indicate Symbol literals
+}
+
+p h.values

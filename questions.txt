@@ -5,6 +5,7 @@ self in ruby
 gsub, sub
 size vs count vs length
 map vs map! vs each vs inject, parameter in inject, reduce, detect, collect
+     (inject and reduce are same)
 each vs each_with_index vs for loop
 Multiple inheritance and multiple inheritance in ruby
 Mixin in Ruby?
@@ -50,7 +51,8 @@ So I would say "Ruby is a stronger typed dynamic language than most common dynam
 
 *********************
 
-Ruby is a language of careful balance. Its creator, Yukihiro “Matz” Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.
+Ruby is a language of careful balance. Its creator, Yukihiro “Matz” Matsumoto, blended parts of his favorite languages
+(Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.
 
 *********************
  sub and gsub do not change actual string
@@ -66,6 +68,8 @@ p arr                   #=> [1,2,3]
 p arr.map! { |n| n * n } #=> [1, 4, 9]
 p arr                     #=> [1, 4, 9]
 *********************
+
+see 22_length_size_count file
 
 Count is the number of items in a collection.
 

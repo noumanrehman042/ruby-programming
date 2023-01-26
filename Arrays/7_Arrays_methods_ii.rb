@@ -74,3 +74,31 @@ p [16, 23, 42].unshift(4, 8, 15)
 # [4, 8, 15, 16, 23, 42]
 
 # ****************************
+
+# This method returns a flat (one-dimensional) version of the array. Nested arrays are recursively injected inline. This can prove very useful when handling the results of a recursive collection algorithm.
+
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten(0) # => [0, [1, [2, 3], 4], 5]
+
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten(1) # => [0, 1, [2, 3], 4, 5]
+
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten(2) # => [0, 1, 2, 3, 4, 5]
+
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten(3) # => [0, 1, 2, 3, 4, 5]
+
+# With no argument, a nil argument, or with negative argument level, flattens all levels:
+
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten # => [0, 1, 2, 3, 4, 5]
+
+[0, 1, 2].flatten # => [0, 1, 2]
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten(-1) # => [0, 1, 2, 3, 4, 5]
+
+a = [ 0, [ 1, [2, 3], 4 ], 5 ]
+a.flatten(-2) # => [0, 1, 2, 3, 4, 5]
+
+[0, 1, 2].flatten(-1) # => [0, 1, 2]

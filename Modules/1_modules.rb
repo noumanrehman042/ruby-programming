@@ -31,7 +31,7 @@ Gfg.topic
 # Note:
 
 # To define module method user have to prefix the name of the module with the method name while defining the method.
-#        The benefit of defining module method is that user can call this method by simply using the name of module and dot operator as shown in above example.
+# The benefit of defining module method is that user can call this method by simply using the name of module and dot operator as shown in above example.
 
 # A user can access the value of a module constant by using the double colon operator(::) as shown in the above example.
 

@@ -91,3 +91,18 @@ puts str.sub('I','We')  # replace 'I' with 'We' in a given string:
 puts str
 puts str.gsub('I','We')   #  replace all occurrences
 puts str
+
+# *************************
+
+myArray = "image/upload/v1663590930/hvkwsmtbz3pg5bhk4w8h.png".split('/')
+filename =  myArray[myArray.length-1]
+a =(filename.length-5)
+p a
+p filename[0, ]
+
+# *****************
+
+string = 'Austin'
+p string[1..string.length-2]  # => ustin
+p string[1..string.size]    # => ustin
+

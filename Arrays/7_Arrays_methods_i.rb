@@ -71,7 +71,7 @@ p arr                     #=> [1, 4, 9]
 
 # ********************
 # inject and reduce are same
-
+puts "Inject"
 # Inject applies the block result + element. to each item in the array
 [1,2,3,4,5,6,7,8,9,10].inject do |sum, val|
   p "sum= #{sum}   val=#{val}" # sum = previous sum or initial value   , val = next item in array
@@ -97,6 +97,13 @@ end
 [1,2,3,4,5,6,7,8,9,10].collect{ |val| val <=5 }
 # => [true, true, true, true, true, false, false, false, false, false]
 
+# The collect method returns the entire collection, regardless of whether it is an array or a hash.
+a = [1,2,3,4,5]
+b = Array.new
+b = a.collect
+puts b
+
+
 # *****************************
 
 # The detect() of enumerable is an inbuilt method in Ruby returns the first element which satisfies the given condition in the block.
@@ -105,3 +112,19 @@ end
 array =(1..10).to_a
 p array.detect { |val|  val % 3 == 0 && val % 9 == 0}
 # => 9
+
+
+# ****************************
+
+
+# summary:
+
+# Inject applies the block result + element. to each item in the array ( same as reduce)
+
+# detect returns the first element which satisfies the given condition in the block
+
+# Collect is similar to Map which takes the enumerable object and a block, evaluates the block for each element and
+#  then return a new array with the calculated values.
+
+
+# The each method allows one loop through the elements of an array to perform operations on them

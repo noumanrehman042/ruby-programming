@@ -10,10 +10,7 @@
 # NOTE: As we know that private methods are strictly restricted for their visibility,
 # only defined class members can access these methods, but they can be inherited by the subclass.
 # A subclass can access them and can override them.
-
-# Ruby program to demonstrate
-# the private access control
-
+ 
 # !/usr/bin/ruby
 
 # creating class

@@ -43,6 +43,8 @@ Star.geeks
 
 # Creating a module contains a method
 
+
+
 # module Geek
 #   def prints(x)
 #     puts x
@@ -50,10 +52,7 @@ Star.geeks
 # end
 
 # class GFG
-
-# # by using both include and extend
-# # we can access them by both instances
-# # and class name.
+# # by using both include and extend we can access them by both instances and class name.
 # include Geek
 # extend Geek
 # end

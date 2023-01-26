@@ -4,21 +4,21 @@
 
 class Vehicle
 	def tyreType
-		puts "Heavy Car"
+		puts "Vehicle"
 	end
 end
 
 # Using inheritance
 class Car < Vehicle
 	def tyreType
-		puts "Small Car"
+		puts "Car"
 	end
 end
 
 # Using inheritance
 class Truck < Vehicle
 	def tyreType
-		puts "Big Car"
+		puts "Truck"
 	end
 end
 
